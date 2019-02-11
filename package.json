@@ -1,0 +1,35 @@
+{
+  "name": "verifiable-file-read-all-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --verbose",
+    "eslint": "eslint . --cache",
+    "eslint:fix": "eslint --fix . --cache"
+  },
+  "keywords": [
+    "cache",
+    "fs",
+    "file",
+    "file cache"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "yumetodo",
+  "license": "BSL-1.0",
+  "dependencies": {
+    "await-mutex": "^1.0.2",
+    "promise-fs": "^2.0.1",
+    "sha.js": "^2.4.11"
+  },
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "1.16.4"
+  }
+}
