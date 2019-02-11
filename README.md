@@ -1,5 +1,7 @@
 # verifiable-file-read-all-cache
 
+[![Build Status](https://travis-ci.org/yumetodo/verifiable-file-read-all-cache.svg?branch=master)](https://travis-ci.org/yumetodo/verifiable-file-read-all-cache)
+
 Read file all and cache it. Also, you can verify sha-256 hash.
 
 ```js
