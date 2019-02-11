@@ -1,12 +1,16 @@
 {
   "name": "verifiable-file-read-all-cache",
   "version": "1.0.0",
-  "description": "",
+  "description": "Read file all and cache it. Also, you can verify sha-256 hash.",
   "main": "index.js",
   "scripts": {
     "test": "ava --verbose",
     "eslint": "eslint . --cache",
     "eslint:fix": "eslint --fix . --cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumetodo/markdown_img_url_editor.git"
   },
   "keywords": [
     "cache",
