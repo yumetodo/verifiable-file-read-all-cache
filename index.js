@@ -20,8 +20,12 @@ class TextCache {
         await this.textPromise_
           .then(text => {
             this.text_ = text;
+            unlock();
           })
-          .finally(() => unlock());
+          .catch(e => {
+            unlock();
+            throw e;
+          });
       } else {
         unlock();
       }
