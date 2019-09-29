@@ -1,6 +1,6 @@
 # verifiable-file-read-all-cache
 
-[![Build Status](https://travis-ci.org/yumetodo/verifiable-file-read-all-cache.svg?branch=master)](https://travis-ci.org/yumetodo/verifiable-file-read-all-cache)
+[![Build Status](https://travis-ci.org/yumetodo/verifiable-file-read-all-cache.svg?branch=master)](https://travis-ci.org/yumetodo/verifiable-file-read-all-cache) [![Greenkeeper badge](https://badges.greenkeeper.io/yumetodo/verifiable-file-read-all-cache.svg)](https://greenkeeper.io/)
 
 Read file all and cache it. Also, you can verify sha-256 hash.
 
