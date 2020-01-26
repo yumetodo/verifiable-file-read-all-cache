@@ -26,20 +26,20 @@
   "dependencies": {
     "await-mutex": "^1.0.2",
     "esm": "^3.2.25",
-    "promise-fs": "^2.0.1",
+    "promise-fs": "^2.1.1",
     "sha.js": "^2.4.11"
   },
   "devDependencies": {
-    "ava": "^3.0.0",
-    "eslint": "^6.5.0",
-    "eslint-config-prettier": "^6.3.0",
+    "ava": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "1.19.0"
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "1.19.1"
   },
-	"ava": {
-		"require": [
-			"esm"
-		]
+  "ava": {
+    "require": [
+      "esm"
+    ]
   }
 }
