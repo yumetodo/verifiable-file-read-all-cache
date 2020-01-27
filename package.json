@@ -25,7 +25,6 @@
   "license": "BSL-1.0",
   "dependencies": {
     "await-mutex": "^1.0.2",
-    "esm": "^3.2.25",
     "promise-fs": "^2.1.1",
     "sha.js": "^2.4.11"
   },
@@ -33,6 +32,7 @@
     "ava": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
+    "esm": "^3.2.25",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "1.19.1"
