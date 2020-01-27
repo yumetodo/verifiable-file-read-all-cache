@@ -16,9 +16,14 @@ jobs:
                 paths:
                     - $HOME/.npm
                 key: node_modules-2-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
+            # ログディレクトリの作成
             - run:
-                name: Create report working_directory
-                command: mkdir -p results
+                command: |
+                    mkdir -p results
+                    mkdir -p results/eslint
+            - run:
+                name: eslint
+                command: npm run eslint -- --format=html -o ./results/eslint/eslint.html
             - run:
                 name: Run tests
                 command: npm test -- --tap | npx tap-xunit > results/ava.xml
