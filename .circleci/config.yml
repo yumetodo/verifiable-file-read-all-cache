@@ -12,13 +12,16 @@ jobs:
             - restore_cache:
                 key: node_modules-2-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
             - run: npm ci
-            - run:
-                name: Run tests
-                command: npm test -- --tap | npx tap-xunit > reports/ava.xml
             - save_cache:
                 paths:
                     - $HOME/.npm
                 key: node_modules-2-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
+            - run:
+                name: Create report working_directory
+                command: mkdir -p results
+            - run:
+                name: Run tests
+                command: npm test -- --tap | npx tap-xunit > results/ava.xml
             - store_test_results:
                 path: results
             - store_artifacts:
