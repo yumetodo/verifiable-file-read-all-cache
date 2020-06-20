@@ -1,6 +1,6 @@
 # verifiable-file-read-all-cache
 
-[![CircleCI](https://circleci.com/gh/yumetodo/verifiable-file-read-all-cache.svg?style=svg)](https://circleci.com/gh/yumetodo/verifiable-file-read-all-cache) [![Greenkeeper badge](https://badges.greenkeeper.io/yumetodo/verifiable-file-read-all-cache.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/yumetodo/verifiable-file-read-all-cache.svg?style=svg)](https://circleci.com/gh/yumetodo/verifiable-file-read-all-cache) [![Known Vulnerabilities](https://snyk.io/test/github/yumetodo/verifiable-file-read-all-cache/badge.svg?targetFile=package.json)](https://snyk.io/test/github/yumetodo/verifiable-file-read-all-cache?targetFile=package.json)
 
 Read file all and cache it. Also, you can verify sha-256 hash.
 
