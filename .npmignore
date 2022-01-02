@@ -3,3 +3,5 @@ test/
 .vscode/
 .gitattributes
 .circleci/
+.prettierrc.json
+.prettierignore
