@@ -31,28 +31,8 @@ jobs:
                 path: results
             - store_artifacts:
                 path: results
-    publish:
-        executor: default
-        steps:
-            - checkout
-            - run: npm ci
-            - run: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
-            - run:
-                command: |
-                    if npx can-npm-publish --verbose; then
-                        npm publish
-                    else
-                        echo "publish skipped"
-                    fi
 workflows:
     version: 2
-    publishflow:
+    workflow:
         jobs:
             - test
-            - publish:
-                context: npm
-                requires:
-                    - test
-                filters:
-                    tags:
-                        only: /^v.*/
