@@ -1,7 +1,7 @@
 {
   "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "env": {
@@ -36,6 +36,27 @@
     "no-useless-escape": "error",
     "camelcase": "error",
     "node/shebang": "error",
-    "node/no-unsupported-features/es-syntax": "off"
-  }
+    "node/no-unsupported-features/es-syntax": "off",
+    "node/no-missing-import": "off",
+    "node/no-unsupported-features/node-builtins": ["error", {
+       "version": ">=20.0.0"
+    }]
+  },
+  "overrides": [
+    {
+      "files": ["*.mjs"],
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "rules": {
+        "node/no-unsupported-features/es-modules": "off"
+      }
+    },
+    {
+      "files": ["test/**/*.js"],
+      "rules": {
+        "node/no-missing-import": "off"
+      }
+    }
+  ]
 }
