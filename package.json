@@ -14,9 +14,11 @@
   },
   "scripts": {
     "test:ava": "ava --verbose",
+    "test:ava:ci": "ava --verbose --tap | npx tap-xunit > results/ava.xml",
     "test:esm": "node test-esm.mjs",
     "test:cjs": "node test-cjs.js",
     "test": "run-p test:ava test:esm test:cjs",
+    "test:ci": "run-p test:ava:ci test:esm test:cjs",
     "eslint": "eslint . --cache",
     "eslint:fix": "eslint --fix . --cache",
     "prettier": "prettier --write ."

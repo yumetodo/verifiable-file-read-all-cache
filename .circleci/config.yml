@@ -26,7 +26,7 @@ jobs:
                 command: npm run eslint -- --format=html -o ./results/eslint/eslint.html
             - run:
                 name: Run tests
-                command: npm test -- --tap | npx tap-xunit > results/ava.xml
+                command: npm run test:ci
             - store_test_results:
                 path: results
             - store_artifacts:
