@@ -1,5 +1,5 @@
 import test from 'ava';
-const TextCache = require('../index');
+import TextCache from '../index.mjs';
 test('get', async t => {
   const textCache = new TextCache(
     './test/input.txt',
